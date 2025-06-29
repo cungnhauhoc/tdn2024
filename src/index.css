@@ -179,7 +179,7 @@ html, body {
   background: #f4f6fb;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   animation: fadeIn 0.5s;
   border: 1.5px solid #1976d2;
 }
@@ -193,9 +193,12 @@ html, body {
 }
 .result-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 6px;
   margin-bottom: 12px;
+  text-align: center;
 }
 .result-icon {
   font-size: 2rem;
@@ -204,6 +207,8 @@ html, body {
   font-size: 1.1rem;
   font-weight: 700;
   color: #1976d2;
+  text-align: center;
+  width: 100%;
 }
 .result-card.passed .result-status {
   color: #388e3c;
