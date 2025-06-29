@@ -42,7 +42,7 @@ function App() {
   const totalPages = Math.ceil(data.length / pageSize);
 
   useEffect(() => {
-    fetch('/src/data.json')
+    fetch('/data.json')
       .then(res => res.json())
       .then(json => {
         if (json && typeof json.content === 'string') {
