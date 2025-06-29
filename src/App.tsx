@@ -122,9 +122,13 @@ function App() {
     <div>
       <header className="main-header">
         <div className="header-bg"></div>
-        <div className="header-content">
-          <div className="header-title">TRA CỨU ĐIỂM THI LỚP 6</div>
-          <div className="header-sub">Trường THCS - THPT Trần Đại Nghĩa - Năm học 2024 - 2025</div>
+        <div className="header-content" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, padding: '0 32px'}}>
+          <img src="/logo-tdn.png" alt="Logo Trần Đại Nghĩa" style={{height: 90, width: 90, objectFit: 'contain', marginLeft: 12}} />
+          <div style={{flex: 1, minWidth: 0}}>
+            <div className="header-title">TRA CỨU ĐIỂM THI LỚP 6</div>
+            <div className="header-sub">Trường THCS - THPT Trần Đại Nghĩa - Năm học 2024 - 2025</div>
+          </div>
+          <img src="/logo-tdn.png" alt="Logo Trần Đại Nghĩa" style={{height: 90, width: 90, objectFit: 'contain', marginRight: 12}} />
         </div>
       </header>
       <div className="stats-box">
