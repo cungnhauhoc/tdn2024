@@ -1,0 +1,237 @@
+/* Header hiện đại, nổi bật */
+header.main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  background: linear-gradient(90deg, #1976d2 0%, #43a047 100%);
+  color: #fff;
+  border-radius: 0 0 28px 28px;
+  box-shadow: 0 2px 16px #1976d233;
+  margin-bottom: 24px;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto 24px auto;
+  border-radius: 0 0 12px 12px;
+}
+@media (max-width: 1020px) {
+  header.main-header {
+    max-width: 100vw;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 16px;
+  }
+}
+.main-header .header-bg {
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+  opacity: 0.13;
+  z-index: 0;
+}
+.main-header .header-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  padding: 32px 0 18px 0;
+}
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 12px #0004, 0 1px 0 #fff8;
+  text-transform: uppercase;
+}
+.header-sub {
+  font-size: 1.15rem;
+  opacity: 0.98;
+  font-weight: 500;
+  text-shadow: 0 1px 8px #0003;
+}
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 1.3rem;
+  }
+  .header-sub {
+    font-size: 0.95rem;
+  }
+  header.main-header {
+    min-height: 80px;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 12px;
+  }
+  .main-header .header-content {
+    padding: 18px 0 10px 0;
+  }
+}
+
+/* Thống kê và phổ điểm */
+.stats-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 24px 0 8px 0;
+  font-size: 1.1rem;
+}
+.stat-item {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 8px 18px;
+  box-shadow: 0 1px 4px #0001;
+}
+
+/* Phổ điểm rõ ràng, trực quan hơn */
+.score-chart {
+  margin: 0 auto 32px auto;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0002;
+  padding: 20px 12px 16px 12px;
+}
+.chart-title {
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+}
+.chart-bar-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 180px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+  padding: 0 8px;
+}
+.chart-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38px;
+  position: relative;
+}
+.bar {
+  width: 22px;
+  min-height: 2px;
+  border-radius: 5px 5px 0 0;
+  transition: height 0.3s;
+  background: linear-gradient(180deg, #1976d2 80%, #90caf9 100%);
+  box-shadow: 0 2px 8px #1976d233;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.bar-label {
+  font-size: 0.82rem;
+  color: #222;
+  margin-top: 4px;
+  min-height: 18px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.bar-count {
+  font-size: 0.95rem;
+  color: #1976d2;
+  font-weight: bold;
+  min-height: 18px;
+  margin-top: 2px;
+  text-shadow: 0 1px 4px #fff, 0 0 2px #1976d2aa;
+}
+.bar:hover, .bar:focus {
+  background: linear-gradient(180deg, #1565c0 80%, #64b5f6 100%);
+  box-shadow: 0 4px 16px #1976d244;
+  outline: 2px solid #1976d2;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Phần chân trang nổi bật */
+footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 32px auto 0 auto;
+  padding: 18px 0 10px 0;
+  background: linear-gradient(90deg, #1976d2 0%, #43a047 100%);
+  color: #fff;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 16px #1976d233;
+  text-align: center;
+  font-size: 1.08rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+footer .credit {
+  font-size: 0.98rem;
+  opacity: 0.93;
+  margin-top: 2px;
+  color: #fff;
+  text-shadow: 0 1px 8px #0003;
+}
+footer .credit a {
+  color: #fff;
+  text-decoration: underline dotted;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+footer .credit a:hover {
+  color: #fbc02d;
+}
+@media (max-width: 1020px) {
+  footer {
+    max-width: 100vw;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.98rem;
+    padding: 12px 0 8px 0;
+  }
+}
