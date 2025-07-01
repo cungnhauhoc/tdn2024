@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tdn2025.cungnhauhoc.net/sitemap.xml
+Sitemap: https://tdn2024.cungnhauhoc.net/sitemap.xml
