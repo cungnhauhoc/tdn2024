@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tdn2025.cungnhauhoc.net/sitemap.xml
